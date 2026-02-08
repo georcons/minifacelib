@@ -1,0 +1,5 @@
+best_dev_loss=1.2052 (epoch 6)
+saved=/root/project/src/minifacelib/models/cnn/weights/emotion.pt
+history=/root/project/reports/fer2013/history.csv
+loss_plot=/root/project/reports/fer2013/loss_curve.png
+acc_plot=/root/project/reports/fer2013/acc_curve.png

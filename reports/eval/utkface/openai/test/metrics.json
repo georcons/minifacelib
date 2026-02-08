@@ -1,0 +1,14 @@
+{
+  "gender": {
+    "accuracy": 0.96,
+    "f1": 0.96,
+    "labels": [
+      "female",
+      "male"
+    ]
+  },
+  "age": {
+    "mae": 4.54,
+    "n_valid": 100
+  }
+}

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minifacelib"
+version = "0.1.0"
+description = "Small ML package for understanding faces"
+requires-python = ">=3.10"
+
+dependencies = [
+  "torch",
+  "torchvision",
+  "pillow",
+  "numpy",
+  "openai",
+  "fastapi",
+  "uvicorn[standard]",
+  "pytest",
+  "pytest-cov",
+  "ruff",
+  "mypy",
+  "matplotlib",
+]
+
+[tool.coverage.run]
+omit = [
+    "tests/*",
+    "*/tests/*"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.setuptools]
+# Important for including non-.py files declared below
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["minifacelib*"]
+
+# Include weights / other assets inside the package (only if they exist there)
+[tool.setuptools.package-data]
+minifacelib = [
+  "**/*.pt",
+  "**/*.json",
+  "**/*.txt",
+]

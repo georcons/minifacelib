@@ -1,0 +1,13 @@
+{
+  "accuracy": 0.62,
+  "f1": 0.62,
+  "labels": [
+    "angry",
+    "disgust",
+    "fear",
+    "happy",
+    "neutral",
+    "sad",
+    "surprise"
+  ]
+}

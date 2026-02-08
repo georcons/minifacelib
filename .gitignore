@@ -1,0 +1,10 @@
+__pycache__
+**egg-info**
+/data
+.coverage
+.coveragerc
+.mypy_cache
+.vscode
+.pytest_cache
+weights
+build
